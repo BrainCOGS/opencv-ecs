@@ -43,6 +43,9 @@
 #ifndef __OPENCV_IMGCODECS_HPP__
 #define __OPENCV_IMGCODECS_HPP__
 
+#define __OPENCV_HACK_SAK__
+
+
 #include <functional>
 #include "opencv2/core.hpp"
 
