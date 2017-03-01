@@ -163,7 +163,7 @@ The function imreadmulti loads a multi-page image from the specified file into a
 @param mats A vector of Mat objects holding each page, if more than one.
 @sa cv::imread
 */
-CV_EXPORTS_W bool imreadmulti(const String& filename, std::vector<Mat>& mats, int flags = IMREAD_ANYCOLOR, int firstFrame = 0);
+CV_EXPORTS_W bool imreadmulti(const String& filename, std::vector<Mat>& mats, int flags = IMREAD_ANYCOLOR, int firstFrame = 0, int frameSkip = 0);
 
 
 class CV_EXPORTS MatFunction {
@@ -179,7 +179,7 @@ public:
 @param mats A vector of Mat objects holding each page, if more than one.
 
 */
-CV_EXPORTS_W bool imreadmulti(const String& filename, MatFunction* processor, int flags = IMREAD_ANYCOLOR, int firstFrame = 0);
+CV_EXPORTS_W bool imreadmulti(const String& filename, MatFunction* processor, int flags = IMREAD_ANYCOLOR, int firstFrame = 0, int frameSkip = 0);
 
 /** @brief Gets the width/height/bitsPerSample and number of frames of an image stack, constraining each frame to be of the same size. (SAK)
 
